@@ -1,0 +1,104 @@
+
+
+
+# global values
+page.meta.author = {$plugin.clmetatags.author}
+page.meta.contact = {$plugin.clmetatags.contact}
+page.meta.description = {$plugin.clmetatags.description}
+page.meta.keywords = {$plugin.clmetatags.keywords}
+page.meta.copyright = {$plugin.clmetatags.copyright}
+page.meta.robots = {$plugin.clmetatags.robots}
+page.meta.rating = {$plugin.clmetatags.rating}
+page.meta.revisit-after = {$plugin.clmetatags.revisit} days
+page.meta.icbm = {$plugin.clmetatags.geo_icbm}
+page.meta.google-site-verification = {$plugin.clmetatags.google-site-verification}
+
+
+# workaround for setting xxx.xxx meta tags
+page.headerData.501 = TEXT
+page.headerData.501.value = {$plugin.clmetatags.geo_region}
+page.headerData.501.stdWrap {
+  wrap = <meta name="geo.region" content="|" />
+  required = 1
+}
+
+page.headerData.502 = TEXT
+page.headerData.502.value = {$plugin.clmetatags.geo_placename}
+page.headerData.502.stdWrap {
+  wrap = <meta name="geo.placename" content="|" />
+  required = 1
+}
+
+page.headerData.503 = TEXT
+page.headerData.503.value = {$plugin.clmetatags.geo_position}
+page.headerData.503.stdWrap {
+  wrap = <meta name="geo.position" content="|" />
+  required = 1
+}
+
+# facebook open graph meta tags
+page.headerData.504 = TEXT
+page.headerData.504.value = {$plugin.clmetatags.og_title}
+page.headerData.504.stdWrap {
+  wrap = <meta name="og:title" content="|" />
+  required = 1
+}
+
+page.headerData.505 = TEXT
+page.headerData.505.value = {$plugin.clmetatags.og_type}
+page.headerData.505.stdWrap {
+  wrap = <meta name="og:type" content="|" />
+  required = 1
+}
+
+page.headerData.506 = TEXT
+page.headerData.506.value = {$plugin.clmetatags.og_image}
+page.headerData.506.stdWrap {
+  wrap = <meta name="og:image" content="|" />
+  required = 1
+}
+
+page.headerData.507 = TEXT
+page.headerData.507.value = {$plugin.clmetatags.og_url}
+page.headerData.507.stdWrap {
+  wrap = <meta name="og:url" content="|" />
+  required = 1
+}
+
+page.headerData.508 = TEXT
+page.headerData.508.value = {$plugin.clmetatags.og_site_name}
+page.headerData.508.stdWrap {
+  wrap = <meta name="og:site_name" content="|" />
+  required = 1
+}
+
+page.headerData.509 = TEXT
+page.headerData.509.value = {$plugin.clmetatags.og_description}
+page.headerData.509.stdWrap {
+  wrap = <meta name="og:description" content="|" />
+  required = 1
+}
+
+page.headerData.510 = TEXT
+page.headerData.510.value = {$plugin.clmetatags.gp_publisherid}
+page.headerData.510.stdWrap {
+  wrap = <link href="https://plus.google.com/|" rel="publisher" />
+  required = 1
+}
+
+
+
+# override by page values
+page.meta.author.override.field = author
+page.meta.author.override.if.isTrue.field = author
+
+page.meta.description.override.field = description
+page.meta.description.override.if.isTrue.field = description
+
+page.meta.keywords.override.field = keywords
+page.meta.keywords.override.if.isTrue.field = keywords
+
+page.meta.contact.override.field = author_email
+page.meta.contact.override.if.isTrue.field = author_email
+
+

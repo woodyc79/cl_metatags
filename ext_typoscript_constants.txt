@@ -1,0 +1,54 @@
+
+plugin.clmetatags {
+
+# cat=plugin.cl_metatags; type=string; label= Author: Author of the global website
+  author = 
+# cat=plugin.cl_metatags; type=string; label= Contact: Contact email of the global website
+  contact = 
+# cat=plugin.cl_metatags; type=string; label= Description: Description of the global website
+  description = 
+# cat=plugin.cl_metatags; type=string; label= Keywords: Keywords of the global website
+  keywords = 
+
+# cat=plugin.cl_metatags; type=string; label= Google Site Verification: 
+  google-site-verification = 
+
+# cat=plugin.cl_metatags; type=string; label= Robots: Use for instance these codes: Index all pages: "all".  Index no pages: "none". Only this page: "index,nofollow".  Only subpages: "noindex,follow"
+  robots = all
+# cat=plugin.cl_metatags; type=string; label= Copyright info: Enter copyright information, eg. "Me Myself and I, 2001. All rights reserved."
+  copyright = 
+# cat=plugin.cl_metatags; type=string; label= Distribution
+  distribution = index, follow
+# cat=plugin.cl_metatags; type=options[,general,mature,14 years,restricted]; label= Rating
+  rating = general
+# cat=plugin.cl_metatags; type=int+; label= Revisit after: Number of days between search engine visits.
+  revisit = 7
+# cat=plugin.cl_metatags; type=string; label= Geo-Tag Region
+  geo_region = 
+# cat=plugin.cl_metatags; type=string; label= Geo-Tag Placename
+  geo_placename = 
+# cat=plugin.cl_metatags; type=string; label= Geo-Tag Position: Example: 47.0667;15.4500
+  geo_position = 
+# cat=plugin.cl_metatags; type=string; label= Geo-Tag ICBM: Example: 47.0667, 15.4500
+  geo_icbm = 
+  
+# cat=plugin.cl_metatags; type=string; label= Open Graph Title: The title of your object as it should appear within the graph
+  og_title = 
+# cat=plugin.cl_metatags; type=string; label= Open Graph Type: The type of your object, e.g., "movie". See the complete list https://developers.facebook.com/docs/opengraphprotocol/#types of supported types.
+  og_type = 
+# cat=plugin.cl_metatags; type=string; label= Open Graph Image:  An image URL which should represent your object within the graph
+  og_image = 
+# cat=plugin.cl_metatags; type=string; label= Open Graph URL: The canonical URL of your object that will be used as its permanent ID in the graph, e.g., http://www.imdb.com/title/tt0117500/
+  og_url = 
+# cat=plugin.cl_metatags; type=string; label= Open Graph Site Name: A human-readable name for your site, e.g., "IMDb"
+  og_site_name = 
+# cat=plugin.cl_metatags; type=string; label= Open Graph Description: A one to two sentence description of your page. 
+  og_description = 
+  
+# cat=plugin.cl_metatags; type=string; label= Google+ Publisher ID: Example: 2498042242
+  gp_publisherid = 
+  
+  
+
+  
+}
