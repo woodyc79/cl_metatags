@@ -19,25 +19,25 @@ extended meta tags
 ==================
 
 :Author:
-      Christopher
+      Sven Wappler
 
 :Created:
       2010-12-18 19::5:7:
 
 :Changed:
-      2012-07-30 34::4:2:
+      2018-08-29 34::4:2:
 
 :Classification:
       cl_metatags
 
 :Keywords:
-      meta tags, frontend
+      meta tags, frontend, facebook
 
 :Author:
       WapplerSystems
 
 :Email:
-      typo3@wapplersystems.de
+      typo3YYYY@wappler.systems
 
 :Language:
       en
