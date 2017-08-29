@@ -3,6 +3,7 @@
     "description": "Extended meta tags",
     "type": "typo3-cms-extension",
     "homepage": "http://wappler.systems",
+    "version" : "2.0.4",
     "license": "GPL-2.0+",
     "require": {
         "typo3/cms": ">=4.5.0, <8.7.99"
