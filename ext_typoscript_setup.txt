@@ -4,8 +4,6 @@
 # global values
 page.meta.author = {$plugin.clmetatags.author}
 page.meta.contact = {$plugin.clmetatags.contact}
-page.meta.description = {$plugin.clmetatags.description}
-page.meta.keywords = {$plugin.clmetatags.keywords}
 page.meta.copyright = {$plugin.clmetatags.copyright}
 page.meta.robots = {$plugin.clmetatags.robots}
 page.meta.rating = {$plugin.clmetatags.rating}
@@ -87,18 +85,18 @@ page.headerData.510.stdWrap {
 }
 
 
-
-# override by page values
-page.meta.author.override.field = author
-page.meta.author.override.if.isTrue.field = author
-
-page.meta.description.override.field = description
-page.meta.description.override.if.isTrue.field = description
-
-page.meta.keywords.override.field = keywords
-page.meta.keywords.override.if.isTrue.field = keywords
-
-page.meta.contact.override.field = author_email
-page.meta.contact.override.if.isTrue.field = author_email
-
+page.meta {
+    description {
+        data = page:description
+        ifEmpty.data = levelfield :-1, description, slide
+    }
+    keywords {
+        data = page:keywords
+        ifEmpty.data = levelfield :-1, keywords, slide
+    }
+    author {
+        data = page.author
+        ifEmpty.data = levelfield :-1, author, slide
+    }
+}
 

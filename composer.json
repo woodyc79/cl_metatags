@@ -1,0 +1,13 @@
+{
+    "name": "svewap/cl-metatags",
+    "description": "Extended meta tags",
+    "type": "typo3-cms-extension",
+    "homepage": "http://wappler.systems",
+    "license": "GPL-2.0+",
+    "require": {
+        "typo3/cms": ">=4.5.0, <8.7.99"
+    },
+    "replace": {
+        "svewap/cl-metatags": "self.version"
+    }
+}

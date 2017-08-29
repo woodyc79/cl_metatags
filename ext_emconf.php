@@ -27,13 +27,14 @@ $EM_CONF[$_EXTKEY] = array(
 	'clearCacheOnLoad' => 1,
 	'lockType' => '',
 	'author' => 'Sven Wappler',
-	'author_email' => 'typo3@wapplersystems.de',
+	'author_email' => 'typo3YYYY@wappler.systems',
 	'author_company' => 'WapplerSystems',
 	'CGLcompliance' => '',
 	'CGLcompliance_note' => '',
-	'version' => '2.0.1',
+	'version' => '2.0.4',
 	'constraints' => array(
 		'depends' => array(
+			'typo3' => '4.5.0-8.7.99',
 		),
 		'conflicts' => array(
 		),
